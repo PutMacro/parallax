@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    height: 100%;
+    color: #666;
+}
+
+.parallax-img1, .parallax-img2, .parallax-img3 {
+  position: relative;
+  opacity: .9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-img1 {
+    background-image: url('img/park.jpg');
+    min-height: 100%;
+}
+
+.parallax-img2 {
+    background-image: url('img/lake.jpg');
+    min-height: 400px;
+}
+
+.parallax-img3 {
+    background-image: url('img/sky.jpg');
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+  padding-bottom: 0;
+}
+
+footer {
+  padding: 15px 0 10px 0;
+  color: #fff;
+  font-size: 10px;
+}
+
+.parallax-text{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 27px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+.parallax-text .border{
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+@media(max-width:568px) {
+ .parallax-img1, .parallax-img2, .parallax-img3 {
+     background-attachment: scroll;
+ }
+}
